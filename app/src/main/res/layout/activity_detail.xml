@@ -8,6 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.DetailActivity">
+
     <TextView
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -17,41 +18,58 @@
         android:text="Detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <ImageView
-        android:id="@+id/img_detail"
-        android:src="@drawable/ic_launcher_background"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
-    <TextView
-        android:id="@+id/txt_judulDetail"
-        android:gravity="center"
-        android:text="Judul Film"
-        android:layout_marginTop="50dp"
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/txt_sutradaraDetail"
-        android:gravity="center"
-        android:text="Sutradara"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/txt_tanggalDetail"
-        android:gravity="center"
-        android:text="Tanggal Tayang Film"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/txt_deskripsiDetail"
-        android:gravity="center"
-        android:text="Deskripsi Film"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_detail"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_judulDetail"
+                android:gravity="center"
+                android:text="Judul Film"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:textColor="@color/black"
+                android:id="@+id/txt_sutradaraDetail"
+                android:gravity="center"
+                android:text="Sutradara"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:id="@+id/txt_tanggalDetail"
+                android:gravity="center"
+                android:text="Tanggal Tayang Film"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_deskripsiDetail"
+                android:text="Deskripsi Film"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+
 
 
 </LinearLayout>

@@ -19,26 +19,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <ImageView
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/cinema"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:id="@+id/edt_emailLogin"
         android:hint="Masukkan Email"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:id="@+id/edt_passLogin"
         android:hint="Masukkan Password"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <Button
         android:id="@+id/btn_login"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="150dp"
         android:text="Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -46,6 +50,7 @@
         android:id="@+id/txt_register"
         android:textSize="12sp"
         android:gravity="center"
+
         android:textColor="@color/black"
         android:text="Belum punya akun?"
         android:layout_width="match_parent"

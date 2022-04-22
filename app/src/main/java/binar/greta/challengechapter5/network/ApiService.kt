@@ -27,5 +27,15 @@ interface ApiService {
         @Field("email") email : String,
         @Field("password") password : String,
         @Field("username") username : String
-    ) : Call<ResponseRegister>
+    ) : Call<Responseuser>
+
+    @POST("updateuser.php")
+    @FormUrlEncoded
+    fun updateUser(
+            @Field("id")id : String,
+            @Field("address")address : String,
+            @Field("complete_name")complete_name : String,
+            @Field("dateofbirth")dateofbirth : String,
+            @Field("username")username : String,
+    ) : Call<Responseuser>
 }

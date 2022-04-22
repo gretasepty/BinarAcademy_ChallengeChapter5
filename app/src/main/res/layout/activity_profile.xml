@@ -17,30 +17,44 @@
         android:text="Profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <ImageView
+        android:src="@drawable/user"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
     <EditText
-        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:background="@drawable/panel"
+        android:layout_marginTop="30dp"
         android:id="@+id/edt_usernameProfile"
         android:hint="Username"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:layout_marginTop="20dp"
         android:id="@+id/edt_namaProfile"
         android:hint="Nama Lengkap"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:layout_marginTop="20dp"
         android:id="@+id/edt_tanggalLahirProfile"
         android:hint="Tanggal Lahir"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:layout_marginTop="20dp"
         android:id="@+id/edt_alamatProfile"
         android:hint="Alamat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <Button
         android:layout_marginTop="50dp"
         android:text="Update"

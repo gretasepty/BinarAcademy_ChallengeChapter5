@@ -19,35 +19,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <ImageView
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/cinema"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:id="@+id/edt_usernameRegis"
         android:hint="Masukkan Username"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:id="@+id/edt_emailRegis"
         android:hint="Masukkan Email"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:id="@+id/edt_passwordRegis"
         android:hint="Password"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <EditText
+        android:gravity="center"
+        android:background="@drawable/panel"
         android:id="@+id/edt_konfirmasiPassRegis"
         android:hint="Konfirmasi Password"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp"/>
     <Button
         android:id="@+id/btn_register"
         android:text="Daftar"

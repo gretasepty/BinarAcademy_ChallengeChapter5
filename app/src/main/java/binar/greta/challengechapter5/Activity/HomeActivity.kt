@@ -1,6 +1,8 @@
 package binar.greta.challengechapter5.Activity
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -15,9 +17,17 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class HomeActivity : AppCompatActivity() {
+
+    lateinit var prefs : SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+
+        prefs = this.getSharedPreferences("datauser", Context.MODE_PRIVATE)
+        val dataUsername = prefs.getString("username", "")
+        val dataid = prefs.getString("id", "")
+        txt_usernameHome.append("Welcome $dataUsername!")
 
         img_profile.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))

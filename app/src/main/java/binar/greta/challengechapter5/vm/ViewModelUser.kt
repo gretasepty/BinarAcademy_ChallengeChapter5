@@ -22,6 +22,25 @@ class ViewModelUser : ViewModel() {
         return liveDataFilm
     }
 
+//    Register
+    fun makeRegister(email: String, password: String, username : String){
+        ApiClient.instance.registerUser(email, password, username)
+                .enqueue(object :Callback<Responseuser>{
+                    override fun onResponse(call: Call<Responseuser>, response: Response<Responseuser>) {
+                        if (response.isSuccessful){
+                            liveDataFilm.postValue(response.body())
+                        }else{
+                            liveDataFilm.postValue(null)
+                        }
+                    }
+                    override fun onFailure(call: Call<Responseuser>, t: Throwable) {
+                        liveDataFilm.postValue(null)
+                    }
+
+                })
+    }
+
+//  Login
     fun makeApiFilm(email :String, password : String){
         ApiClient.instance.loginUser(email, password)
             .enqueue(object : Callback<Responseuser>{
@@ -33,15 +52,34 @@ class ViewModelUser : ViewModel() {
                         liveDataFilm.postValue(response.body())
                     }else{
                         liveDataFilm.postValue(null)
-
                     }
                 }
-
                 override fun onFailure(call: Call<Responseuser>, t: Throwable) {
                     liveDataFilm.postValue(null)
                 }
 
             })
+
+    }
+
+//    UpdateProfile
+    fun makeUpdateProfile(id : Int, alamat : String, nama : String,
+                          tanggalLahir : String, username : String){
+        ApiClient.instance.updateUser(id.toString(), alamat, nama, tanggalLahir, username)
+                .enqueue(object : Callback<Responseuser>{
+                    override fun onResponse(call: Call<Responseuser>, response: Response<Responseuser>) {
+                        if(response.isSuccessful){
+                            liveDataFilm.postValue(response.body())
+                        }else{
+                            liveDataFilm.postValue(null)
+                        }
+                    }
+
+                    override fun onFailure(call: Call<Responseuser>, t: Throwable) {
+                        liveDataFilm.postValue(null)
+                    }
+
+                })
 
     }
 }
