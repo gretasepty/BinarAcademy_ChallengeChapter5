@@ -1,8 +1,9 @@
+@file:Suppress("JoinDeclarationAndAssignment")
+
 package binar.greta.challengechapter5.vm
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import binar.greta.challengechapter5.model.GetAllFilmResponseItem
 import binar.greta.challengechapter5.model.Responseuser
 import binar.greta.challengechapter5.network.ApiClient
 import retrofit2.Call

@@ -1,3 +1,5 @@
+@file:Suppress("unused", "MoveLambdaOutsideParentheses")
+
 package binar.greta.challengechapter5.Activity
 
 import android.content.Context
@@ -9,18 +11,14 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import binar.greta.challengechapter5.R
 import binar.greta.challengechapter5.model.Responseuser
-import binar.greta.challengechapter5.network.ApiClient
 import binar.greta.challengechapter5.vm.ViewModelUser
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_register.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+
 
 class LoginActivity : AppCompatActivity() {
 
     lateinit var datafilm : Responseuser
-    lateinit var prefs : SharedPreferences
+    private lateinit var prefs : SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun dataLogin(){
+    private fun dataLogin(){
         val textEmail = edt_emailLogin.text.toString()
         val textPassword = edt_passLogin.text.toString()
         val viewModel = ViewModelProvider(this).get(ViewModelUser::class.java)

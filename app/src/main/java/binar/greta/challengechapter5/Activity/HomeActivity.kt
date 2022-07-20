@@ -1,3 +1,5 @@
+@file:Suppress("RedundantOverride", "MemberVisibilityCanBePrivate", "MemberVisibilityCanBePrivate")
+
 package binar.greta.challengechapter5.Activity
 
 import android.content.Context

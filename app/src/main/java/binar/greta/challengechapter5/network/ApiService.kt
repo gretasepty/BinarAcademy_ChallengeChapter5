@@ -1,7 +1,6 @@
 package binar.greta.challengechapter5.network
 
 import binar.greta.challengechapter5.model.GetAllFilmResponseItem
-import binar.greta.challengechapter5.model.ResponseRegister
 import binar.greta.challengechapter5.model.Responseuser
 import retrofit2.Call
 import retrofit2.http.Field

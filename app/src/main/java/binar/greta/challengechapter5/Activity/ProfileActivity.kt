@@ -1,3 +1,5 @@
+@file:Suppress("MoveLambdaOutsideParentheses")
+
 package binar.greta.challengechapter5.Activity
 
 import android.content.Context
@@ -15,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_profile.*
 
 class ProfileActivity : AppCompatActivity() {
 
-    lateinit var prefs : SharedPreferences
+    private lateinit var prefs : SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
@@ -48,7 +50,7 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    fun dataProfile(){
+    private fun dataProfile(){
         val id = prefs.getString("id", "")
         val alamat = edt_alamatProfile.text.toString()
         val nama = edt_namaProfile.text.toString()

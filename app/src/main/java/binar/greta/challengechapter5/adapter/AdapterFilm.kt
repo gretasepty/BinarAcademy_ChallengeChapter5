@@ -1,3 +1,5 @@
+@file:Suppress("RemoveEmptyClassBody")
+
 package binar.greta.challengechapter5.adapter
 
 import android.view.LayoutInflater

@@ -1,3 +1,5 @@
+@file:Suppress("MemberVisibilityCanBePrivate")
+
 package binar.greta.challengechapter5.network
 
 import okhttp3.OkHttpClient

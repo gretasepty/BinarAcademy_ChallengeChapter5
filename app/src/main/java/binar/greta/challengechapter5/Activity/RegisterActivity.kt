@@ -1,3 +1,5 @@
+@file:Suppress("UnusedImport", "MoveLambdaOutsideParentheses")
+
 package binar.greta.challengechapter5.Activity
 
 import android.content.Intent
@@ -11,7 +13,6 @@ import binar.greta.challengechapter5.vm.ViewModelUser
 import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
-    lateinit var datafilm : Responseuser
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +34,7 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    fun dataRegister(){
+    private fun dataRegister(){
         val emailRegis = edt_emailRegis.text.toString()
         val passRegis = edt_passwordRegis.text.toString()
         val usernameRegis = edt_usernameRegis.text.toString()
